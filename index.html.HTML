@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treballs RIA Jessica Franco</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{
+           font-family: 'Montserrat', sans-serif;
+        }
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        html {
+            font-size: 10px;
+        }
+                
+        
+
+        header {
+            font: 'Montserrat', sans-serif;
+            padding: 0 1em;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            background-color: mediumaquamarine;
+            background-size: cover;
+            background-position: -2em;
+            background-image: 
+            height: 100vh;
+        }
+        h1 {
+            font-family: 'Montserrat' sans-serif;
+            font-size: 16vw;
+            line-height: 1em;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 9vw;
+        }
+        h3 {
+            font-size: 8vw;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 0 16px;
+            height: 149px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: mediumaquamarine;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 11em 1em 0 1em;
+            font-family: 'Montserrat', sans-serif
+            background: #A4D4B4;
+        }
+
+        section {
+            width: 100%;
+            margin: 0 0 1.6em 0;
+            display: flex;
+            flex-direction: column;
+            height: 348px;
+            background: white;
+        }
+
+        section figure {
+            padding: 0.8em 0.8em 0 0.8em;
+        }
+
+        section figure img {
+            width: 100%;
+            height: 280px;
+            object-position: bottom;
+            object-fit: cover;
+        }
+
+        section figcaption {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-bottom: 3em;
+            width: 100%;
+            height: 414px;
+            font-family: 'Montserrat', sans-serif
+            /*            background: #FFCF9C;*/
+        }
+
+        footer a {
+            color: #3B1C32;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .xxss {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .email {
+            text-align: center;
+        }
+
+
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                
+                background: #A4D4B4;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            body {
+               font-family: 'Montserrat', sans-serif;
+                background: #A4D4B4;
+            }
+
+            header {
+               
+                background-image: url('img/pattern_tablet.png');
+                padding: 0 11em;
+            }
+
+            h1 {
+                font-family: 'Montserrat' sans-serif;
+                font-size: 10vw;
+                line-height: 1em;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-family: 'Montserrat' sans-serif;
+                font-size: 6vw;
+            }
+
+            h3 {
+                font-family: 'Montserrat' sans-serif;
+                font-size: 5vw;
+            }
+
+            main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            section {
+                min-width: 200px;
+                max-width: 400px;
+                margin: 0 0 1.6em 0;
+                display: flex;
+                flex-direction: column;
+                height: 348px;
+                background: white;
+                border-radius: 20px;
+            }
+            .grid-container{
+                padding: 0 8vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            html{
+                font-family: 'Montserrat' sans-serif;
+                font-size: 23px;
+            }
+            body {
+                background: pink;
+            }
+            header{
+                font-family: 'Montserrat' sans-serif;
+                height: 70vh;
+                background-image: url('img/pattern_escritori.png');
+                background-position: top;
+            }
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 3vw;
+                line-height: 1em;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 4vw;
+                width: 100%;
+                text-align: left;
+            }
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 4vw;
+                padding: 0 0 0 10vw;
+            }
+            h1 br{
+                display: none;
+            }
+            nav{
+                position: relative;
+                justify-content: flex-start;
+                padding: 0 11em;
+            }
+            nav a{
+                font-size: 1.5em;
+                margin: 0 2.5em 0 0.5em;
+            }
+            section{
+                min-width: 20em;
+                max-width: 23em;
+                height: 20em;
+                border-radius: 20px;
+            }
+            main{
+                height: 1800px;
+            }
+            section figure img {
+                height: 15em;
+                object-fit: cover;
+                object-position: center center;
+            }
+            section h4{
+                font-size: 1.3em;
+            }
+            footer{
+                padding: 0 7em;
+                flex-direction: row;
+            }
+            .xxss{
+                width: 75%;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .xxss a{
+                padding: 0 5em 0 0;
+            }
+            .email{
+                width: 25%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            section:nth-child(4){
+                background: white;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+ 
+        
+<div class="=grid-container">
+    <header class="header">
+      
+          
+        
+        <h1>Recursos<br> Interactius<br> Aplicats</h1>
+        <h2>A la gràfica Publicitària<br> EASD ALCOI <br> 2020/2021</h2>
+        <h3>Jessica Franco</h3>
+    </header>
+    <nav class="menu">
+        <a href="#main">projectes</a>
+        <a href="#xxss">contacte</a>
+    </nav>
+    <main id="main">
+        <div class="grid-container">
+            <section>
+               
+                <figure>
+                   
+                    <img src="img/p1_webtreballs.png" alt="llocweb">
+                </figure>
+                
+                <figcaption>
+                   <a href="file:///E:/COSAS%20DE%20CLASE%20EASD/grafica%20segundo/p0/index.html">p0_llocweb</a>
+                    <h4></h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/p1.png" alt="llocweb">
+                    
+                </figure>
+                <figcaption> 
+                   <a href="file:///C:/Users/Jessica/Downloads/p01_llocweb/p1_jessica.HTML" >p1_webtreballs</a>
+                    <h4></h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/p1_webtreballs.png" alt="llocweb">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+             <section>
+                <figure>
+                    <img src="img/p1_webtreballs.png" alt="llocweb">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+        </div>
+    </main>
+    <footer id="footer">
+        <div id="xxss">
+            <a href="https://www.instagram.com/_sieningles">Instagram</a>
+            <br>
+            <a href="https://www.twitter.com/jesspdlp">Twitter</a>
+            <br>
+            <a href="https://www.facebook.com/jessicafranco">Facebook</a>
+        </div>
+        <div id="email">
+            <a href="mailto:francomj@easdalcoi.es">
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
